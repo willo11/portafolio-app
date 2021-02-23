@@ -18,10 +18,13 @@ import { Scrollbars } from "react-custom-scrollbars";
 // import Header from "Sections/Header";
 // import Home from "Sections/Home";
 import Footer from "Sections/Footer";
+import About from 'Sections/About';
 // import Project from "Sections/Project";
 
 // import styles
 import useStyles from "./styles";
+
+const photo = "img/Foto.jpg";
 
 export default function Landing(props) {
   const classes = useStyles();
@@ -84,6 +87,14 @@ export default function Landing(props) {
           autoHideTimeout={1000}
           autoHideDuration={200}
         > */}
+          <About 
+            id='about'
+            language={language}
+            theme='dark'
+            photo={photo}
+            toPage={scrollTo}
+            state={state}
+          />
           <Footer
             id="footer"
             language={language}

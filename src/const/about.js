@@ -13,7 +13,7 @@ const footer = {
          "My name is William Giovany Palomino, I am a Systems Engineering graduate from the Universidad Industrial de Santander (UIS) with experience in web and mobile development acquired during the learning process with the UIS.",
          "I have gained knowledge as a FullStack developer thanks to various courses taught on platforms such as Udemy, Coursera. On my own I have participated in the development of mobile development projects during the course of my training as a professional.",
       ],
-      contact: "Contacto",
+      contact: "Contact",
       cv: "docs/CV/WilliamPalominoCV.pdf",
       buttons: ["Download CV"],
    },
