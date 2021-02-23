@@ -15,7 +15,7 @@ const custom = {
    },
    secondary: {
       light: "#7eaeff",
-      main: "#4285f4",
+      main: "#2f2e41",
       dark: "#3968b6",
       contrastText: "#fff",
    },
