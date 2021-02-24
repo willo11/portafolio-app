@@ -18,8 +18,8 @@ import { Scrollbars } from "react-custom-scrollbars";
 // import Header from "Sections/Header";
 // import Home from "Sections/Home";
 import Footer from "Sections/Footer";
-import About from 'Sections/About';
-import Course from 'Sections/Course';
+import About from "Sections/About";
+import Tech from "Sections/Tech";
 // import Project from "Sections/Project";
 
 // import styles
@@ -88,30 +88,32 @@ export default function Landing(props) {
           autoHideTimeout={1000}
           autoHideDuration={200}
         > */}
-          <About 
-            id='about'
-            language={language}
-            theme='dark'
-            photo={photo}
-            toPage={scrollTo}
-            state={state}
-          />
-         {/* <Course 
+        <About
+          id="about"
+          language={language}
+          theme="dark"
+          photo={photo}
+          toPage={scrollTo}
+          state={state}
+        />
+        {/* <Course 
           id='course'
           language={language}
           theme='light'
          />  */}
-          <Footer
-            id="footer"
-            language={language}
-            hidden={page !== "about"}
-            theme="dark"
-            toPage={scrollTo}
-            state={state}
-            handleState={handleState}
-          />
+
+        <Tech id="tech" language={language} theme="dark" toPage={scrollTo} />
+        <Footer
+          id="footer"
+          language={language}
+          hidden={page !== "about"}
+          theme="dark"
+          toPage={scrollTo}
+          state={state}
+          handleState={handleState}
+        />
         {/* </Scrollbars> */}
       </div>
-    </> 
+    </>
   );
 }
