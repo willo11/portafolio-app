@@ -72,6 +72,11 @@ const About = ({ theme, language, state, photo, toPage, ...other }) => {
                   willopalomino@gmail.com
                 </Link>
               </Typography>
+              <Typography color="inherit" variant="body1" align="left">
+                <Link href="tel:3222240683" color="inherit">
+                  (+57) 3222240683
+                </Link>
+              </Typography>
             </Grid>
             <Grid item>
               <Button

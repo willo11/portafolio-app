@@ -19,6 +19,7 @@ import { Scrollbars } from "react-custom-scrollbars";
 // import Home from "Sections/Home";
 import Footer from "Sections/Footer";
 import About from 'Sections/About';
+import Course from 'Sections/Course';
 // import Project from "Sections/Project";
 
 // import styles
@@ -95,17 +96,22 @@ export default function Landing(props) {
             toPage={scrollTo}
             state={state}
           />
+         {/* <Course 
+          id='course'
+          language={language}
+          theme='light'
+         />  */}
           <Footer
             id="footer"
             language={language}
             hidden={page !== "about"}
-            theme="light"
+            theme="dark"
             toPage={scrollTo}
             state={state}
             handleState={handleState}
           />
         {/* </Scrollbars> */}
       </div>
-    </>
+    </> 
   );
 }
