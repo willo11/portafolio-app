@@ -24,6 +24,7 @@ import Tech from "Sections/Tech";
 
 // import styles
 import useStyles from "./styles";
+import Porfolio from "Sections/Portfolio";
 
 const photo = "img/Foto.jpg";
 
@@ -103,6 +104,7 @@ export default function Landing(props) {
          />  */}
 
         <Tech id="tech" language={language} theme="dark" toPage={scrollTo} />
+        <Porfolio id='portfolio' language={language} theme='light' toPage={scrollTo} />
         <Footer
           id="footer"
           language={language}
