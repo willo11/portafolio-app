@@ -4,10 +4,6 @@ const Drawer = "img/Portfolio/ConfusionReactNative/Drawer.png";
 
 const images = [
   {
-    url: AboutUs,
-    type: "image",
-  },
-  {
     url: DishDetail,
     type: "image",
   },
@@ -15,7 +11,10 @@ const images = [
     url: Drawer,
     type: "image",
   },
-
+  {
+    url: AboutUs,
+    type: "image",
+  },
 ];
 
 export default images;

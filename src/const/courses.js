@@ -5,7 +5,7 @@ const courses = {
   espanol: [
     {
       title: "Programa Especializado - Full-Stack Web Development with React",
-      date: null,
+      date: "Ago 10, 2020 - Ene 24, 2021",
       institution: "Coursera",
       description: [
         "Construye Soluciones web y mobiles hibridas completas. Domina la web front-end, la aplicación móvil híbrida y el desarrollo del lado del servidor en cuatro cursos completos.",
@@ -16,7 +16,7 @@ const courses = {
     },
     {
       title: "React Native Bootcamp | Build 18 iOs & Android app",
-      date: null,
+      date: "Ago 12, 2019",
       institution: "Udemy",
       description: [
         "Este curso tiene enfoque práctico dirigido a gente sin experiencia, enfocado en React Native, en donde se explican diversos temas tales como el uso de redux para una aplicacion react native, y el uso del API de la camara y el sonido del celular, entre otros. ",
@@ -28,8 +28,8 @@ const courses = {
   ],
   english: [
     {
-      title: "Programa Especializado - Full-Stack Web Development with React",
-      date: null,
+      title: "Full-Stack Web Development with React",
+      date: "Aug 10, 2020 - Jan 24, 2020",
       institution: "Coursera",
       description: [
         "Build Complete Web and Hybrid Mobile Solutions. Master front-end web, hybrid mobile app and server-side development in four comprehensive courses.",
@@ -40,7 +40,7 @@ const courses = {
     },
     {
       title: "React Native Bootcamp | Build 18 iOs & Android app",
-      date: null,
+      date: "Aug 12, 2019",
       institution: "Udemy",
       description: [
         "This course has a practical approach aimed at people with no experience, focused on React Native, where various topics are explained such as the use of redux for a react native application, and the use of the API of the camera and the sound of the cell phone, among others.",

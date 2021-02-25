@@ -26,7 +26,8 @@ import Tech from "Sections/Tech";
 import useStyles from "./styles";
 import Porfolio from "Sections/Portfolio";
 import Education from "Sections/Education";
-import Course from 'Sections/Course';
+import Course from "Sections/Course";
+import Experience from "Sections/Experience";
 
 const photo = "img/Foto.jpg";
 
@@ -99,14 +100,16 @@ export default function Landing(props) {
           toPage={scrollTo}
           state={state}
         />
-        <Course 
-          id='course'
-          language={language}
-          theme='light'
-         /> 
-        <Education language={language} theme="light" toPage={scrollTo}/>
+        <Course id="course" language={language} theme="light" />
+        <Experience language={language} theme="light" toPage={scrollTo} />
+        <Education language={language} theme="light" toPage={scrollTo} />
         <Tech id="tech" language={language} theme="dark" toPage={scrollTo} />
-        <Porfolio id='portfolio' language={language} theme='light' toPage={scrollTo} />
+        <Porfolio
+          id="portfolio"
+          language={language}
+          theme="light"
+          toPage={scrollTo}
+        />
         <Footer
           id="footer"
           language={language}

@@ -6,19 +6,19 @@ const News = "img/Portfolio/YouTrain/News.png";
 
 const images = [
   {
-    url: Compare,
-    type: "image",
-  },
-  {
-    url: Feed,
-    type: "image",
-  },
-  {
     url: Home,
     type: "image",
   },
   {
     url: Login,
+    type: "image",
+  },
+  {
+    url: Compare,
+    type: "image",
+  },
+  {
+    url: Feed,
     type: "image",
   },
   {

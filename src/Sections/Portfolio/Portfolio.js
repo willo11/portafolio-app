@@ -50,25 +50,25 @@ const Porfolio = ({ theme, toPage, language, ...other }) => {
       <div className={classes.root}>
         <GridList
           cellHeight={500}
-          spacing={1}
+          spacing={0}
           className={classes.gridList}
           cols={getColumns()}
         >
-          {images[language].map(({ key: _key, img: _img, tittle: _tittle }) => (
+          {images[language].map(({ key: _key, img: _img, title: _title }) => (
             <GridListTile
               key={_key}
               onMouseEnter={isMobile ? null : handleOver(_key)}
               onMouseLeave={isMobile ? null : handleOver()}
               onMouseOver={isMobile ? null : handleOver({ _key })}
             >
-              <img scrc={_img} alt={_tittle} />
-              <Slide>
+              <img src={_img} alt={_title} />
+              <Slide direction='down' in={isMobile || _key === over}>
                 <GridListTileBar
-                  title={_tittle}
-                  titlePosition="bottom"
+                  title={_title}
+                  titlePosition="top"
                   actionIcon={
                     <IconButton
-                      aria-label={`eye ${_tittle}`}
+                      aria-label={`eye ${_title}`}
                       className={classes.icon}
                       onClick={toPage(_key)}
                     >

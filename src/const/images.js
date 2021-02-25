@@ -8,7 +8,7 @@ const images = {
     {
       key: "confusionBootstrap",
       img: confusionBootstrap[0].url,
-      tittle: "Confusion Bootstrap",
+      title: "Confusion Bootstrap",
       date: "Aug 1, 2020 - Sep 10, 2020",
       location: "Bucaramanga, Santander",
       role: "Aprendiz Front-End",
@@ -27,7 +27,7 @@ const images = {
     {
       key: "confusionReactNative",
       img: confusionReactNative[0].url,
-      tittle: "Confusion ReactNative",
+      title: "Confusion ReactNative",
       date: "Sep 10, 2020 - Oct 10, 2020",
       location: "Bucaramanga, Santander",
       role: "Aprendiz Front-End",
@@ -41,7 +41,7 @@ const images = {
     {
       key: "youTrain",
       img: youTrain[0].url,
-      tittle: "You Train",
+      title: "You Train",
       date: "mar 10, 2020 - Nov 1, 2020",
       location: "Bucaramanga, Santander",
       role: "Desarrollador FullStack",
@@ -56,7 +56,7 @@ const images = {
     {
       key: "confusionReact",
       img: confusionReact[0].url,
-      tittle: "Confusion React",
+      title: "Confusion React",
       date: "Ene 4, 2021 - Ene 20, 2021",
       location: "Bucaramanga, Santander",
       role: "Aprendiz Front-End",
@@ -72,7 +72,7 @@ const images = {
     {
       key: "confusionBootstrap",
       img: confusionBootstrap[0].url,
-      tittle: "Confusion Bootstrap",
+      title: "Confusion Bootstrap",
       date: "Ago 1, 2020 - Sep 10, 2020",
       location: "Bucaramanga, Santander",
       role: "Front-End Trainee",
@@ -91,7 +91,7 @@ const images = {
     {
       key: "confusionReactNative",
       img: confusionReactNative[0].url,
-      tittle: "Confusion ReactNative",
+      title: "Confusion ReactNative",
       date: "Sep 10, 2020 - Oct 10, 2020",
       location: "Bucaramanga, Santander",
       role: "Front-End Trainee",
@@ -105,7 +105,7 @@ const images = {
     {
       key: "youTrain",
       img: youTrain[0].url,
-      tittle: "You Train",
+      title: "You Train",
       date: "mar 10, 2020 - Nov 1, 2020",
       location: "Bucaramanga, Santander",
       role: "FullStack Developer",
@@ -120,7 +120,7 @@ const images = {
     {
       key: "confusionReact",
       img: confusionReact[0].url,
-      tittle: "Confusion React",
+      title: "Confusion React",
       date: "Jan 4, 2021 - Jan 20, 2021",
       location: "Bucaramanga, Santander",
       role: "Front-End Trainee",
