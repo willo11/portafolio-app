@@ -22,7 +22,7 @@ const Course = ({ theme, language, ...other }) => {
 
   const [tooltip, setTooltip] = useState(false);
 
-  const handleTooltip = (newState = false) => {
+  const handleTooltip = (newState = false) => () => {
     if (newState !== tooltip) setTooltip(newState);
   };
 
