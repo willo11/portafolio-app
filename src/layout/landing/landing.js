@@ -5,32 +5,35 @@ import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 // Import local components
-//import Section from "Components/Section";
+import Section from "Components/Section";
 
 // Import local const
-//import { sections } from "const/sections";
+import { sections } from "const/sections";
 
 // Import other modules
 import { Scrollbars } from "react-custom-scrollbars";
 //import ReactCountryFlag from "react-country-flag";
 
 // Import local sections
-// import Header from "Sections/Header";
-// import Home from "Sections/Home";
+//import Header from "Sections/Header";
 import Footer from "Sections/Footer";
-import About from "Sections/About";
-import Tech from "Sections/Tech";
-// import Project from "Sections/Project";
+import Project from "Sections/Project";
 
 // import styles
 import useStyles from "./styles";
-import Porfolio from "Sections/Portfolio";
-import Education from "Sections/Education";
-import Course from "Sections/Course";
-import Experience from "Sections/Experience";
-import Project from "Sections/Project";
 
-const photo = "img/Foto.jpg";
+// const lang = {
+//    espanol: {
+//       title: "Español",
+//       key: "espanol",
+//       icon: <ReactCountryFlag countryCode="ES" />,
+//    },
+//    english: {
+//       title: "English",
+//       key: "english",
+//       icon: <ReactCountryFlag countryCode="US" />,
+//    },
+// };
 
 export default function Landing(props) {
   const classes = useStyles();
@@ -39,7 +42,7 @@ export default function Landing(props) {
   const smDown = useMediaQuery(themeProvider.breakpoints.down("sm"));
 
   const scrollbar = useRef();
-  const [page, setPage] = useState("about");
+  const [page, setPage] = useState("home");
   const [language, setLanguage] = useState("english");
 
   const [state, setState] = useState({
@@ -47,7 +50,7 @@ export default function Landing(props) {
     body: "",
   });
 
-  //const keys = Object.keys(sections[language]);
+  const keys = Object.keys(sections[language]);
 
   const offset = smDown ? -2 : 62;
 
@@ -85,43 +88,79 @@ export default function Landing(props) {
 
   return (
     <>
-      <div>
-        {/* <Scrollbars
+      <div className={classes.root}>
+        <Scrollbars
           className="custom-scrollbars"
           ref={scrollbar}
           autoHide
           autoHideTimeout={1000}
           autoHideDuration={200}
-        > */}
-        <About
-          id="about"
-          language={language}
-          theme="dark"
-          photo={photo}
-          toPage={scrollTo}
-          state={state}
-        />
-        <Course id="course" language={language} theme="light" />
-        <Experience language={language} theme="light" toPage={scrollTo} />
-        <Education language={language} theme="light" toPage={scrollTo} />
-        <Tech id="tech" language={language} theme="dark" toPage={scrollTo} />
-        <Porfolio
-          id="portfolio"
-          language={language}
-          theme="light"
-          toPage={scrollTo}
-        />
-        <Project id="project" page={page} language={language} />
-        <Footer
-          id="footer"
-          language={language}
-          hidden={page !== "about"}
-          theme="dark"
-          toPage={scrollTo}
-          state={state}
-          handleState={handleState}
-        />
-        {/* </Scrollbars> */}
+        >
+          {Object.values(sections[language]).map(
+            (
+              {
+                component: Component,
+                key,
+                title,
+                props,
+                section: { leftPart: LeftPart = null, ...propsSection } = {},
+              },
+              section_index,
+              array
+            ) => {
+              return (
+                <Section
+                  {...propsSection}
+                  id={key}
+                  page={page}
+                  key={key}
+                  handlePage={handlePage}
+                  before={
+                    array[section_index - 1]
+                      ? array[section_index - 1].key
+                      : null
+                  }
+                  after={
+                    array[section_index + 1]
+                      ? array[section_index + 1].key
+                      : null
+                  }
+                  title={title}
+                  leftPart={
+                    LeftPart ? (
+                      <LeftPart
+                        language={language}
+                        theme={section_index % 2 === 0 ? "dark" : "light"}
+                      />
+                    ) : null
+                  }
+                  theme={section_index % 2 === 0 ? "dark" : "light"}
+                >
+                  <Component
+                    {...props}
+                    language={language}
+                    state={state}
+                    page={page}
+                    toPage={scrollTo}
+                    theme={section_index % 2 === 0 ? "dark" : "light"}
+                  />
+                </Section>
+              );
+            }
+          )}
+
+          <Project id="project" page={page} language={language} />
+
+          <Footer
+            id="footer"
+            language={language}
+            hidden={page !== "home"}
+            theme="light"
+            toPage={scrollTo}
+            state={state}
+            handleState={handleState}
+          />
+        </Scrollbars>
       </div>
     </>
   );
