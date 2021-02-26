@@ -28,6 +28,7 @@ import Porfolio from "Sections/Portfolio";
 import Education from "Sections/Education";
 import Course from "Sections/Course";
 import Experience from "Sections/Experience";
+import Project from "Sections/Project";
 
 const photo = "img/Foto.jpg";
 
@@ -110,6 +111,7 @@ export default function Landing(props) {
           theme="light"
           toPage={scrollTo}
         />
+        <Project id="project" page={page} language={language} />
         <Footer
           id="footer"
           language={language}

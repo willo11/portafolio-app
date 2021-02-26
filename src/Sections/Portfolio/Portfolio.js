@@ -50,7 +50,7 @@ const Porfolio = ({ theme, toPage, language, ...other }) => {
       <div className={classes.root}>
         <GridList
           cellHeight={500}
-          spacing={0}
+          spacing={20}
           className={classes.gridList}
           cols={getColumns()}
         >
@@ -59,13 +59,13 @@ const Porfolio = ({ theme, toPage, language, ...other }) => {
               key={_key}
               onMouseEnter={isMobile ? null : handleOver(_key)}
               onMouseLeave={isMobile ? null : handleOver()}
-              onMouseOver={isMobile ? null : handleOver({ _key })}
+              onMouseOver={isMobile ? null : handleOver(_key)}
             >
               <img src={_img} alt={_title} />
-              <Slide direction='down' in={isMobile || _key === over}>
+              <Slide direction='up' in={isMobile || _key === over}>
                 <GridListTileBar
                   title={_title}
-                  titlePosition="top"
+                  titlePosition="bottom"
                   actionIcon={
                     <IconButton
                       aria-label={`eye ${_title}`}
