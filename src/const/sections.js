@@ -22,141 +22,140 @@ import {
 const photo = "img/Foto.jpg";
 
 const sections = {
-
-    español: {
-        about:{
-            key:'about',
-            title: 'Acerca de Mí',
-            component: About,
-            icon: Face,
-            props: {
-                photo,
-            },
-            section:{},
-        },
-        education:{
-            key:'education',
-            title: 'Estudios',
-            component: Education,
-            icon: ()=> <FontAwesomeIcon icon={faGraduationCap}/>,
-            props: {},
-            section:{
-                subtitle:'Educación Formal',
-                leftPart: Legend,
-            },
-        },
-        experience:{
-            key:'experience',
-            title: 'Experiencia Laboral',
-            component: Experience,
-            icon: ()=> <FontAwesomeIcon icon={faBuilding}/>,
-            props: {},
-            section:{
-                subtitle: 'Experiencia certificada',
-                leftPart: Legend,
-            },
-        },
-        course:{
-            key:'course',
-            title: 'Cursos',
-            component: Course,
-            icon: ()=> <FontAwesomeIcon icon={faChalkboard}/>,
-            props: {},
-            section:{
-                subtitle: 'Cursos Virtuales',
-                leftPart: Legend,
-            },
-        },
-        tech:{
-            key:'tech',
-            title: 'Tecnologías',
-            component: Tech,
-            icon: Build,
-            props: {},
-            section:{
-                subtitle: 'Tecnologías Usadas',
-            },
-        },
-        portfolio:{
-            key:'portfolio',
-            title: 'Portafolio',
-            component: Portfolio,
-            icon: Work,
-            props: {},
-            section:{
-                subtitle: 'Algunos Proyectos',
-                fullWidth: true,
-            },
-        },        
-    },
-    english: {
-        about:{
-            key:'about',
-            title: 'About Me',
-            component: About,
-            icon: Face,
-            props: {
-                photo,
-            },
-            section:{},
-        },
-        education:{
-            key:'education',
-            title: 'Education',
-            component: Education,
-            icon: ()=> <FontAwesomeIcon icon={faGraduationCap}/>,
-            props: {},
-            section:{
-                subtitle:'Formal Education',
-                leftPart: Legend,
-            },
-        },
-        experience:{
-            key:'experience',
-            title: 'Experiencia',
-            component: Experience,
-            icon: ()=> <FontAwesomeIcon icon={faBuilding}/>,
-            props: {},
-            section:{
-                subtitle: 'Certified Experience',
-                leftPart: Legend,
-            },
-        },
-        course:{
-            key:'course',
-            title: 'Courses',
-            component: Course,
-            icon: ()=> <FontAwesomeIcon icon={faChalkboard}/>,
-            props: {},
-            section:{
-                subtitle: 'Online Courses',
-                leftPart: Legend,
-            },
-        },
-        tech:{
-            key:'tech',
-            title: 'Techs',
-            component: Tech,
-            icon: Build,
-            props: {},
-            section:{
-                subtitle: 'Some Techs',
-            },
-        },
-        portfolio:{
-            key:'portfolio',
-            title: 'Portfolio',
-            component: Portfolio,
-            icon: Work,
-            props: {},
-            section:{
-                subtitle: 'Some Proyects',
-                fullWidth: true,
-            },
-        },        
-    },
+   espanol: {
+      about: {
+         key: "about",
+         title: "Acerca de mí",
+         component: About,
+         icon: Face,
+         props: {
+            photo,
+         },
+         section: {},
+      },
+      education: {
+         key: "education",
+         title: "Educación",
+         component: Education,
+         icon: () => <FontAwesomeIcon icon={faGraduationCap} />,
+         props: {},
+         section: {
+            subtitle: "Educación formal",
+            leftPart: Legend,
+         },
+      },
+      experience: {
+         key: "experience",
+         title: "Experiencia Laboral",
+         component: Experience,
+         icon: () => <FontAwesomeIcon icon={faBuilding} />,
+         props: {},
+         section: {
+            subtitle: "Experiencia certificada",
+            leftPart: Legend,
+         },
+      },
+      curse: {
+         key: "curse",
+         title: "Cursos",
+         component: Course,
+         icon: () => <FontAwesomeIcon icon={faChalkboard} />,
+         props: {},
+         section: {
+            subtitle: "Cursos virtuales",
+            leftPart: Legend,
+         },
+      },
+      tech: {
+         key: "tech",
+         title: "Tecnologías",
+         component: Tech,
+         icon: Build,
+         props: {},
+         section: {
+            subtitle: "Tecnologías Usadas...",
+         },
+      },
+      portfolio: {
+         key: "portfolio",
+         title: "Portafolio",
+         component: Portfolio,
+         icon: Work,
+         props: {},
+         section: {
+            subtitle: "Algunos proyectos",
+            fullWidth: true,
+         },
+      },
+   },
+   english: {
+      about: {
+         key: "about",
+         title: "About me",
+         component: About,
+         icon: Face,
+         props: {
+            photo,
+         },
+         section: {},
+      },
+      education: {
+         key: "education",
+         title: "Education",
+         component: Education,
+         icon: () => <FontAwesomeIcon icon={faGraduationCap} />,
+         props: {},
+         section: {
+            subtitle: "Formal education",
+            leftPart: Legend,
+         },
+      },
+      experience: {
+         key: "experience",
+         title: "Experience",
+         component: Experience,
+         icon: () => <FontAwesomeIcon icon={faBuilding} />,
+         props: {},
+         section: {
+            subtitle: "Certified experience",
+            leftPart: Legend,
+         },
+      },
+      curse: {
+         key: "curse",
+         title: "Courses",
+         component: Course,
+         icon: () => <FontAwesomeIcon icon={faChalkboard} />,
+         props: {},
+         section: {
+            subtitle: "Online courses",
+            leftPart: Legend,
+         },
+      },
+      tech: {
+         key: "tech",
+         title: "Techs",
+         component: Tech,
+         icon: Build,
+         props: {},
+         section: {
+            subtitle: "Some Technologies...",
+         },
+      },
+      portfolio: {
+         key: "portfolio",
+         title: "Portfolio",
+         component: Portfolio,
+         icon: Work,
+         props: {},
+         section: {
+            subtitle: "Some Proyects",
+            fullWidth: true,
+         },
+      },
+   },
 };
 
-const section_keys = object.keys(sections);
+const section_keys = Object.keys(sections);
 
-export {sections, section_keys};
+export { sections, section_keys };
