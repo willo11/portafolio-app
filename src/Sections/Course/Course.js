@@ -28,15 +28,15 @@ const Course = ({ theme, language, ...other }) => {
 
   return (
     <Timeline classes={{ root: classes.root }}>
-      {courses[language].map((study, index) => (
+      {courses[language].map((study, index, _array) => (
         <TimelineItem
           key={study.title}
           classes={{ missingOppositeContent: classes.missingOppositeContent }}
         >
           <TimelineSeparator>
             <TimelineDot
-              color={study.ended ? "secundary" : "grey"}
-              classes={classes.root}
+              color={study.ended ? "secondary" : "grey"}
+              classes={{root: classes.root}}
               component="a"
             >
               <Tooltip title="Download Certificate" placement="left">
@@ -53,7 +53,7 @@ const Course = ({ theme, language, ...other }) => {
                 </a>
               </Tooltip>
             </TimelineDot>
-            {index === courses.lenght - 1 ? null : <TimelineConnector />}
+            {index === courses[language].length - 1 ? null : <TimelineConnector />}
           </TimelineSeparator>
           <TimelineContent
             onMouseOver={handleTooltip(index)}
