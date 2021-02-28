@@ -26,12 +26,12 @@ const lang = {
   espanol: {
     title: "Español",
     key: "espanol",
-    icon: <ReactCountryFlag countryCode="ES" />,
+    icon:<ReactCountryFlag countryCode="ES" svg />,
   },
   english: {
     title: "English",
     key: "english",
-    icon: <ReactCountryFlag countryCode="US" />,
+    icon:<ReactCountryFlag countryCode="US" svg/>,
   },
 };
 
