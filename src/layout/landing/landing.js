@@ -12,28 +12,28 @@ import { sections } from "const/sections";
 
 // Import other modules
 import { Scrollbars } from "react-custom-scrollbars";
-//import ReactCountryFlag from "react-country-flag";
+import ReactCountryFlag from "react-country-flag";
 
 // Import local sections
-//import Header from "Sections/Header";
+import Header from "Sections/Header";
 import Footer from "Sections/Footer";
 import Project from "Sections/Project";
 
 // import styles
 import useStyles from "./styles";
 
-// const lang = {
-//    espanol: {
-//       title: "Español",
-//       key: "espanol",
-//       icon: <ReactCountryFlag countryCode="ES" />,
-//    },
-//    english: {
-//       title: "English",
-//       key: "english",
-//       icon: <ReactCountryFlag countryCode="US" />,
-//    },
-// };
+const lang = {
+  espanol: {
+    title: "Español",
+    key: "espanol",
+    icon: <ReactCountryFlag countryCode="ES" />,
+  },
+  english: {
+    title: "English",
+    key: "english",
+    icon: <ReactCountryFlag countryCode="US" />,
+  },
+};
 
 export default function Landing(props) {
   const classes = useStyles();
@@ -96,6 +96,16 @@ export default function Landing(props) {
           autoHideTimeout={1000}
           autoHideDuration={200}
         >
+          <Header
+            language={language}
+            lang={lang}
+            setLanguage={setLanguage}
+            onChangePage={scrollTo}
+            page={page}
+            sections={sections[language]}
+            isMobile={smDown}
+          />
+
           {Object.values(sections[language]).map(
             (
               {
