@@ -50,8 +50,6 @@ export default function Landing(props) {
     body: "",
   });
 
-  const keys = Object.keys(sections[language]);
-
   const offset = smDown ? -2 : 62;
 
   const handleState = (e) => {

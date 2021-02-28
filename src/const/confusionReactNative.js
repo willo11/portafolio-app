@@ -1,4 +1,4 @@
-const AboutUs = "img/Portfolio/ConfusionReacNative/AboutUs.png";
+const AboutUs = "img/Portfolio/ConfusionReactNative/AboutUs.png";
 const DishDetail = "img/Portfolio/ConfusionReactNative/DishDetail.png";
 const Drawer = "img/Portfolio/ConfusionReactNative/Drawer.png";
 

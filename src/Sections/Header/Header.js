@@ -33,7 +33,7 @@ export default function Header({
    const [menu, setMenu] = useState(false);
 
    const scrollTo = key => () => {
-      onChangePage(key());
+      onChangePage(key)();
       setOpen(false);
    };
 
@@ -42,7 +42,7 @@ export default function Header({
    };
 
    const handleMenuLanguage = newState => () =>{
-      if (newState !== menu) setOpen(_open => (newState ? newState : !_open));
+      if (newState !== menu) setMenu(_open => (newState ? newState : !_open));
    };
 
    const handleMenu = event => {
