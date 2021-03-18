@@ -1,7 +1,7 @@
 import { colors } from "@material-ui/core";
 
-const white = "#FFFFFF";
-const black = "#2f2e41";
+const white = "#e5e5e5";
+const black = "#20202d";
 const modeBlack = "#121212";
 const deepPurple = colors.deepPurple["100"];
 
