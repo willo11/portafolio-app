@@ -8,8 +8,9 @@ const useStyles = makeStyles(theme => ({
       position: props.home ? "relative" : "fixed",
       top: 0,
       left: 0,
-      color: theme.palette.primary.contrastText,
-      backgroundColor: theme.palette.white,
+      color: theme.palette.white,
+      backgroundColor: theme.palette.modeBlack,
+      border: 0,
       width: "100%",
       zIndex: theme.zIndex.appBar,
    }),
@@ -19,7 +20,7 @@ const useStyles = makeStyles(theme => ({
       right: theme.spacing(2),
    },
    activeButton: {
-      fontWeight: 600,
+      fontWeight: 800,
       color: theme.palette.secondary.dark,
    },
    buttonBar: {

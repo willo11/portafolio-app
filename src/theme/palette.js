@@ -2,10 +2,12 @@ import { colors } from "@material-ui/core";
 
 const white = "#FFFFFF";
 const black = "#2f2e41";
+const modeBlack = "#121212";
 
 const custom = {
    black,
    white,
+   modeBlack,
    transparent: "transparent",
    primary: {
       light: "#f2f2f2",
@@ -14,9 +16,9 @@ const custom = {
       contrastText: black,
    },
    secondary: {
-      light: "#7eaeff",
-      main: "#2f2e41",
-      dark: "#3968b6",
+      light: colors.pink[400],
+      main: colors.pink[600],
+      dark: colors.pink[800],
       contrastText: "#fff",
    },
    tertiary: {
