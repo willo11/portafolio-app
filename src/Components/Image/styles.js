@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
    media: props => ({
-      height: 0,
+      height: 20,
       width: "100%",
       display: "block",
       paddingTop: "100%",
@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
-      borderRadius: "50%",
+      borderRadius: "5%",
       position: "relative",
    }),
    viewPreview: {

@@ -150,7 +150,7 @@ export default function Landing(props) {
                     state={state}
                     page={page}
                     toPage={scrollTo}
-                    theme={section_index % 2 === 0 ? "dark" : "light"}
+                    theme={section_index % 2 === 0 ? "light" : "dark"}
                   />
                 </Section>
               );

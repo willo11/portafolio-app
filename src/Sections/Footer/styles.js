@@ -54,7 +54,7 @@ const useStyles = makeStyles(theme => ({
    bottom: {
       width: "100%",
       height: `calc(${theme.spacing(4)} + 40px)`,
-      backgroundColor: theme.palette.black,
+      backgroundColor: theme.palette.modeBlack,
       display: "flex",
       justifyContent: "center",
       alignItems: "center",

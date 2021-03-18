@@ -3,22 +3,24 @@ import { colors } from "@material-ui/core";
 const white = "#FFFFFF";
 const black = "#2f2e41";
 const modeBlack = "#121212";
+const deepPurple = colors.deepPurple["100"];
 
 const custom = {
    black,
+   deepPurple,
    white,
    modeBlack,
    transparent: "transparent",
    primary: {
       light: "#f2f2f2",
       main: "#f6f6f6",
-      dark: "#ededed",
+      dark: deepPurple,
       contrastText: black,
    },
    secondary: {
-      light: colors.pink[400],
-      main: colors.pink[600],
-      dark: colors.pink[800],
+      light: colors.deepPurple[400],
+      main: colors.deepPurple[600],
+      dark: colors.deepPurple[800],
       contrastText: "#fff",
    },
    tertiary: {
